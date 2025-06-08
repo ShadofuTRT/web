@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tạo layout cho web</title>
+    <link rel="stylesheet" type="text/css" href="./tanshi.css">
+    <link rel="stylesheet" type="text/css" href="./menuNgang.css">
+</head>
+
+<body>
+    <header> <!--Nội dung phần header của web-->
+        <img src="https://pngimg.com/uploads/kfc/kfc_PNG33.png" alt="KFC_logo" width="70" height="80">
+        <h2>Gà ngon không cần chấm!</h2>
+    </header>
+    <nav> <!--Phần chứa link điều hướng website-->
+        <ul>
+            <li><a title="Trang chủ" href="#">Trang chủ</a></li>
+            <li><a title="Mua hàng" href="#">Mua hàng</a>
+                <ul>
+                    <li><a title="Gà" href="#">Gà</a></li>
+                    <li><a title="Mì ý" href="#">Mì ý</a></li>
+                    <li><a title="Hamburger" href="#">Hamburger</a></li>
+                    <li><a title="Nước" href="#">Nước</a></li>
+                </ul>
+            </li>
+            <li><a title="Giao hàng" href="#">Giao hàng</a></li>
+            <li><a title="Về chúng tôi" href="#">Về chúng tôi</a>
+                <ul>
+                    <li><a title="Cơ sở" href="#">Cơ sở</a>
+                        <ul>
+                            <li><a title="Hà Nội" href="https://kfcvietnam.com.vn/">Hà Nội</a></li>
+                            <li><a title="HCM" href="https://kfcvietnam.com.vn/">HCM</a></li>
+                        </ul>
+                    </li>
+                    <li><a title="Lịch sử" href="#">Lịch sử</a></li>
+                    <li><a title="Liên hệ" href="#">Liên hệ</a></li>
+                    <li><a title="Việc làm" href="#">Việc làm</a></li>
+                </ul>
+            </li>
+            <li><a title="Khách hàng" href="#">Khách hàng</a></li>
+        </ul>
+    </nav>
+    <section> <!--Nội dung chính của web-->
+        <aside id="aside_left">
+            <a href="https://en.gamesaien.com/game/fruit_box/">
+        <img src="https://en.gamesaien.com/game/fruit_box/zu01.png"
+            alt="Quảng cáo" width="200" height="150" border="1pt"/>
+    </a>
+        </aside>
+        <article> <!--Nội dung chính-->
+            <div class="container">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="products">
+            <!-- Sản phẩm 1 -->
+            <div class="product" id="01">
+                
+                <h3>Gà rán</h3>
+                <div class="price">35.000đ</div>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="product" id="02">
+                
+                <h3>Mì ý</h3>
+                <div class="price">35.000đ</div>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="product" id="03">
+                
+                <h3>Nước ngọt</h3>
+                <div class="price">15.000đ</div>
+                <button class="buy-btn">Mua ngay</button>
+            </div>
+
+        </div>
+    </div>
+        </article>
+        <aside id="aside_right">
+            <a href="https://www.facebook.com/">
+        <img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19761.png"
+            alt="Văn bản thay thế" width="150" height="150" border="1pt"/>
+    </a>
+        </aside>
+    </section>
+    <footer>
+        <div class="copyright">
+            &copy; 2025 KFC
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First HTML</title>
+    <link rel="stylesheet" type="text/css" href="./tutorial.css">
+</head>
+
+<body>
+
+    <h1>Hello</h1>
+    <h1 class="title">Đây là tiêu đề h1</h1>
+    <h2 class="under_title">Anh em Ơn Lạnh mình cứ thế thôi</h2>
+    <h3>Hẹ hẹ hẹ</h3>
+    <hr/>
+    
+    <p><big>Highlight bán kết C1</big></p>
+    <img src="../images/c1.jpg" alt="Logo C1"/>
+    
+    <ul type="disc">
+        <li><a href="https://www.youtube.com/watch?v=tkpWa-zyNJE" target="_blank">Phú ngao</a></li>
+        <li><a href="https://www.youtube.com/watch?v=9EvI4zcsi9A" target="_blank">Xã đần</a></li>
+    </ul>
+
+    <p><big>Bán kết C2</big></p>
+    <ol>
+        <li>Mân đỏ - Bilbao</li>
+        <li>Tốt gà - Bodo</li>
+    </ol>
+
+    <p>Sử dụng table</p>
+    <table width="500" border="1" cellpading="5" cellspacing="0">
+        <caption>Bảng gì đấy</caption>
+        <thead>
+            <tr>
+                <th class="columnhead">Cột 1</th>
+                <th class="columnhead">Cột 2</th>
+                <th class="columnhead">Cột 3</th>
+                <th class="columnhead">Cột 4</th>
+                <th class="columnhead">Cột 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" colspan="2"> 1x2</td>
+                <td>c1</td>
+                <td>d1</td>
+                <td>e1</td>
+            </tr>
+            <tr>
+                <td>c2</td>
+                <td rowspan="2" colspan="2">
+                    <a href="https://tv360.vn" target="_blank">
+                        <img src="../images/tv360.webp" width="50" height="50"/>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>a3</td>
+                <td>b3</td>
+                <td>c3</td>
+            </tr>
+            <tr>
+                <td>a4</td>
+                <td>b4</td>
+                <td>c4</td>
+                <td>d4</td>
+                <td>e4</td>
+            </tr>
+            <tr>
+                <td>a5</td>
+                <td colspan="4">bxe5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <h1 class="title">Đơn Đăng Ký Thành Viên</h1>
+        <p class="under_title">Vui lòng điền thông tin của bạn vào biểu mẫu dưới đây</p>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            
+            <fieldset>
+                <legend>Thông Tin Cá Nhân</legend>
+                <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td colspan="2">
+                            <label for="firstName">Họ và Tên:</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Nhập tên của bạn" required>
+                        </td>
+                        <td colspan="2">
+                            <label for="birthdate">Ngày Sinh:</label>
+                            <input type="date" id="birthdate" name="birthdate">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="email">Địa Chỉ Email:</label>
+                            <input type="email" id="email" name="email" placeholder="ten@example.com" required>
+                        </td>
+                        <td colspan="2">
+                            <label for="phone">Số Điện Thoại:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="012-345-6789">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="profilePicture">Ảnh Đại Diện:</label>
+                            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Địa Chỉ</legend>
+                <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label for="ward">Xã/Phường:</label>
+                            <input type="text" id="ward" name="ward" placeholder="Tân Triều">
+                        </td>
+                        <td>
+                            <label for="district">Quận/Huyện:</label>
+                            <input type="text" id="district" name="district" placeholder="Thanh Trì">
+                        </td>
+                        <td>
+                            <label for="city">Tỉnh/Thành Phố:</label>
+                            <input type="text" id="city" name="city" placeholder="Hà Nội">
+                        </td>
+                        <td>
+                            <label for="street">Địa chỉ cụ thể:</label>
+                            <input type="text" id="street" name="street" placeholder="141 Chiến Thắng">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Thông Tin Tài Khoản</legend>
+                <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td rowspan="2">
+                            <label for="username">Tên Đăng Nhập:</label>
+                            <input type="text" id="username" name="username" placeholder="Chọn tên đăng nhập" required>
+                        </td>
+                        <td>
+                            <label for="password">Mật Khẩu:</label>
+                            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required minlength="8">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="confirmPassword">Xác Nhận Mật Khẩu:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Xác nhận mật khẩu" required minlength="8">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Thông tin thêm</legend>
+                <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td colspan="3"><label>Giới Tính:</label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="radio" name="gender" value="male" checked> Nam</label></td>
+                        <td><label><input type="radio" name="gender" value="female"> Nữ</label></td>
+                        <td><label><input type="radio" name="gender" value="unknown">Không rõ</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><label>Sở Thích (có thể chọn nhiều mục):</label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" name="interests" value="sports"> Thể thao</label></td>
+                        <td><label><input type="checkbox" name="interests" value="music"> Âm nhạc</label></td>
+                        <td><label><input type="checkbox" name="interests" value="movies"> Phim</label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" name="interests" value="books"> Sách</label></td>
+                        <td><label><input type="checkbox" name="interests" value="travel"> Du lịch</label></td>
+                        <td><label><input type="checkbox" name="interests" value="technology"> Công nghệ</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label for="subscription">Đăng Ký nhận Tin tức:</label>
+                            <select id="subscription" name="subscription">
+                                <option value="daily">Hàng Ngày</option>
+                                <option value="weekly" selected>Hàng Tuần</option>
+                                <option value="monthly">Hàng Tháng</option>
+                                <option value="none">Không Đăng Ký</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Thông Tin Bổ Sung</legend>
+                <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td width="50%">
+                            <label for="height">Chiều cao:</label>
+                            <input type="number" id="height" name="height" min="130" max="250">
+                        </td>
+                        <td width="50%">
+                            <label for="website">Website cá nhân/Mạng xã hội:</label>
+                            <input type="url" id="website" name="website" placeholder="https://example.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="favoriteColor">Màu Yêu Thích:</label>
+                            <input type="color" id="favoriteColor" name="favoriteColor">
+                        </td>
+                        <td>
+                            <label for="satisfactionLevel">Mức Độ Hài Lòng:</label>
+                            <input type="range" id="satisfactionLevel" name="satisfactionLevel" min="0" max="10" step="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="comments">Giới thiệu về bản thân:</label>
+                            <textarea id="comments" name="comments" rows="1" cols="100" placeholder="Chia sẻ về bản thân bạn..."></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Điều Khoản và Điều Kiện</legend>
+                <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" id="terms" name="terms" required>
+                                Tôi đồng ý với <a href="#">Điều Khoản và Điều Kiện</a>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                Tôi đồng ý với <a href="#">Chính Sách Bảo Mật</a>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" id="news" name="news">
+                                Tôi muốn nhận thông tin về các sự kiện
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                <tr>
+                    <td>
+                        <button type="submit">Gửi Biểu Mẫu</button>
+                        <button type="reset">Đặt Lại Biểu Mẫu</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

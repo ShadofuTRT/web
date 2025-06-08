@@ -1,0 +1,147 @@
+/*Phần cần chia thành 3 cột */
+section {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+section :nth-child(1) {
+    order: 1;
+}
+
+section :nth-child(2) {
+    order: 2;
+}
+
+section :nth-child(3) {
+    order: 3;
+}
+
+#aside_left {
+    background-color: #FFBE98;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+}
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 5;
+    padding: 10px;
+    border-left: #f5f5f5 solid 8px;
+    border-right: #f5f5f5 solid 8px;
+}
+
+#aside_right {
+    background-color: #999;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+}
+
+nav {
+    margin: 5px 10%;
+    background: #a47764;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav>ul li {
+    position: relative;
+    list-style: none;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #333;
+}
+
+nav>ul li a {
+    display: block;
+    padding: 0 25px;
+    line-height: 50px;
+    color: #f1f2f3;
+    text-decoration: none;
+}
+
+nav ul li:first-child {
+    border-left: none;
+}
+
+nav>ul li:first-child a {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+nav a:hover {
+    background: red;
+    opacity: .7;
+    color: yellow;
+}
+
+/* Modified dropdown menu - appears side by side */
+nav li ul {
+    display: none;
+    min-width: 200px; /* Reduced width for side-by-side layout */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1000;
+}
+
+/* First level dropdown */
+nav li>ul li {
+    position: relative;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    text-align: left;
+    float: left; /* Add float for side-by-side layout */
+}
+
+nav li>ul li:first-child a {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+nav li>ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav li>ul li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav li:hover>ul {
+    display: block;
+}
+
+/* Modified submenu - appears to the right side by side */
+nav>ul li>ul li>ul {
+    position: absolute;
+    left: 200px; /* Position next to the dropdown, not below */
+    top: 0;
+    min-width: 200px;
+    display: none;
+}
+
+/* Show submenu when hovering over dropdown item */
+nav>ul li>ul li:hover>ul {
+    display: block;
+}
+
+/* Ensure proper stacking */
+nav ul ul {
+    z-index: 1001;
+}
+
+nav ul ul ul {
+    z-index: 1002;
+}

@@ -1,0 +1,48 @@
+nav {
+    border-bottom: 5px groove;
+    margin: 2%;
+}
+
+footer {
+    border-top: 5px groove;
+    margin: 2%;
+}
+
+.header_selection {
+    font-size: 32px;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 2%;
+    border: 2px double greenyellow;
+    background-color: aqua;
+    text-decoration: none;
+}
+
+#home_button {
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.title {
+    color: hsl(305, 70%, 48%);
+    border: 2px groove tomato;
+    border-radius: 5px;
+}
+
+.under_title {
+    color: #0f7e3c;
+}
+
+.columnhead {
+    background-color: aqua;
+    color:hsl(208, 76%, 34%);
+}
+
+fieldset {
+    background-color: azure;
+}
+
+legend {
+    border: 2px dotted;
+    border-radius: 5px;
+    background-color: aqua;
+}

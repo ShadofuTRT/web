@@ -1,0 +1,33 @@
+body {
+    background-image: url(../images/bej.jpg);
+}
+
+ul {
+    color: brown;
+}
+
+.title {
+    color: hsl(305, 70%, 48%);
+    border: 2px groove tomato;
+    border-radius: 5px;
+}
+
+.under_title {
+    color: #0f7e3c;
+}
+
+.columnhead {
+    background-color: aqua;
+    color:hsl(208, 76%, 34%);
+}
+
+fieldset {
+    background-color: azure;
+}
+
+legend {
+    border: 2px dotted;
+    border-radius: 5px;
+    background-color: aqua;
+}
+
