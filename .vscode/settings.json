@@ -4,5 +4,49 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    }
+    },
+    "auto-complete-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact",
+        "vue"
+    ],
+    "auto-close-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact",
+        "vue"
+    ],    
+    "emmet.excludeLanguages": [
+        "php"
+    ],
+    "anbuselvanrocky.bootstrap5-vscode.activationOnLanguage": [
+        "html",
+        "css",
+        "scss",
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact",
+        "vue"
+    ],
+    "thekalinga.bootstrap4-vscode.activationOnLanguage": [
+        "html",
+        "css",
+        "scss",
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact",
+        "vue"
+    ],
+    "php.suggest.basic": true,
+    "intelephense.completion.triggerParameterHints": true,
+    "intelephense.completion.insertUseDeclaration": true
 }

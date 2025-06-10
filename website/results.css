@@ -1,0 +1,64 @@
+/** @format */
+
+.result-container {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 30px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.success-section,
+.error-section {
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.success-section {
+	background-color: #d4edda;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+}
+
+.error-section {
+	background-color: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+}
+
+.data-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+	background-color: #f8f9fa;
+	font-weight: 600;
+	color: #495057;
+}
+
+.back-btn {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 600;
+}
+
+.back-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}

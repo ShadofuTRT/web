@@ -1,0 +1,155 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Đăng Ký</title>
+		<link
+			rel="stylesheet"
+			href="registration.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form
+				id="registrationForm"
+				class="registration-form"
+				method="POST"
+				action="process_registration.php">
+				<h2>TẠO TÀI KHOẢN MỚI</h2>
+
+				<div class="form-group">
+					<label for="firstName">Họ & Đệm *</label>
+					<input
+						type="text"
+						id="firstName"
+						name="firstName"
+						required />
+					<span
+						class="error-message"
+						id="firstNameError"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="lastName">Tên *</label>
+					<input
+						type="text"
+						id="lastName"
+						name="lastName"
+						required />
+					<span
+						class="error-message"
+						id="lastNameError"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email *</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required />
+					<span
+						class="error-message"
+						id="emailError"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="password">Mật khẩu *</label>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						required />
+					<span
+						class="error-message"
+						id="passwordError"></span>
+					<small class="help-text">Mật khẩu dài ít nhất 8 kí tự</small>
+				</div>
+
+				<div class="form-group">
+					<label for="confirmPassword">Xác nhận mật khẩu *</label>
+					<input
+						type="password"
+						id="confirmPassword"
+						name="confirmPassword"
+						required />
+					<span
+						class="error-message"
+						id="confirmPasswordError"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="phone">Số điện thoại</label>
+					<input
+						type="tel"
+						id="phone"
+						name="phone" />
+					<span
+						class="error-message"
+						id="phoneError"></span>
+				</div>
+				<div class="form-group">
+					<label for="birthdate">Ngày sinh *</label>
+					<input
+						type="date"
+						id="birthdate"
+						name="birthdate"
+						required />
+					<span
+						class="error-message"
+						id="birthdateError"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="gender">Giới tính *</label>
+					<select
+						id="gender"
+						name="gender"
+						required>
+						<option value="">Chọn giới tính</option>
+						<option value="male">Nam</option>
+						<option value="female">Nữ</option>
+						<option value="other">Khác</option>
+					</select>
+					<span
+						class="error-message"
+						id="genderError"></span>
+				</div>
+
+				<div class="form-group checkbox-group">
+					<label class="checkbox-label">
+						<input
+							type="checkbox"
+							id="terms"
+							name="terms"
+							required />
+						Tôi đồng ý với các Điều khoản*
+					</label>
+					<span
+						class="error-message"
+						id="termsError"></span>
+				</div>
+
+				<button
+					type="submit"
+					class="submit-btn"
+					required>
+					Đăng Ký
+				</button>
+
+				<div
+					id="successMessage"
+					class="success-message"
+					style="display: none">
+					Đăng Ký Thành Công!
+				</div>
+			</form>
+		</div>
+
+		<script src="registration.js"></script>
+	</body>
+</html>
